@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #19375b;
+  height: 100vh;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: #a7bfdc;
+}
+
+.container {
+  width: 600px;
+  height: 780px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tools,
+.stats {
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(#061423, #0d1f32);
+}
+
+.reset {
+  cursor: pointer;
+}
+
+.stats {
+  margin-top: 20px;
+}
+
+.cells {
+  display: flex;
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  background-color: #0d1f32;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, .5);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6em;
+}
+
+.cell .fa-circle{
+  font-size: .8em;
+}
+
+.cell:hover{
+  background-color: #061423;
+}
+
+.player,
+.draw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  font-weight: 700;
+  font-size: .7em;
+}
+
+.stats span {
+  color: #febf14;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#message {
+  position: absolute;
+  height: 30%;
+  min-height: 200px;
+  width: 100%;
+  background-color: #061423;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid #19375b;
+  border-bottom: 1px solid #19375b;
+  box-shadow: 0 10px 20px #000;
+  z-index: 2;
+}
+
+#message h2 {
+  color: #febf14;
+}
+
+#close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.current-turn {
+  color: #febf14;
+}

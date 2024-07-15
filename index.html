@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>XO Game</title>
+</head>
+
+<body>
+
+  <!-- Begain Game -->
+  <div id="overlay">
+    <div id="message">
+      <div id="close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="content"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="tools">
+      <div class="symbols">
+        <i class="fa-solid fa-xmark"></i>
+        <i class="fa-regular fa-circle"></i>
+      </div>
+
+      <div class="turn">
+        <span class="current-turn"></span> Turn
+      </div>
+
+      <div class="reset">
+        <div class="button">
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="board">
+      <div class="cells">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <div class="cells">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <div class="cells">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="player">
+        <label>Player 1</label>
+        <span class="score1">0</span>
+      </div>
+
+      <div class="draws">
+        <label>Draw</label>
+        <span class="draw">0</span>
+      </div>
+
+      <div class="player">
+        <label>Player 2</label>
+        <span class="score2">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Game -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
